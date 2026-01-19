@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Inicio - Gestión de Zonas</title>
+    
+    <!-- Fuentes e Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", 
+                        "primary-dark": "#1d4ed8",
+                        "secondary": "#7c3aed",
+                        "text-main": "#020617",
+                        "text-sub": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+
+    <!-- Conexión a tus Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-display text-text-main dark:text-white antialiased selection:bg-primary/30 bg-home">
+
+    <!-- Navbar -->
+    <header class="sticky top-4 z-50 mx-4 md:mx-8 glass-panel rounded-2xl mt-4">
+        <div class="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center justify-center size-10 bg-primary/10 text-primary rounded-xl border border-primary/20 bg-white">
+                    <span class="material-symbols-outlined text-2xl">grid_view</span>
+                </div>
+                <div class="hidden sm:flex flex-col">
+                    <h1 class="text-lg font-bold tracking-tight text-text-main dark:text-white leading-none">Despliegue Territorial</h1>
+                    <span class="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-tight">Ciudad Juárez</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-3">
+                <!-- BOTÓN ACTIVO: INICIO -->
+                <a href="index.html" class="text-sm font-bold text-primary px-5 py-2.5 bg-white rounded-xl border border-primary/20 shadow-md transition-all hover:scale-105">Inicio</a>
+                
+                <a href="metodologia.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Metodología</a>
+                <a href="zonas.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Zonas</a>
+                <a href="historico.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Histórico 18-24</a>
+                
+                <div class="h-8 w-px bg-gray-300 dark:bg-white/10 mx-2"></div>
+
+                <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing" target="_blank" class="flex items-center gap-2 text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-emerald-500/30 hover:scale-105">
+                    <span class="material-symbols-outlined text-[20px]">map</span>
+                    Mapa General
+                </a>
+            </nav>
+            
+            <div class="flex items-center gap-3">
+                <button class="p-2 text-text-sub bg-white/50 hover:bg-white rounded-full transition-all shadow-sm hover:shadow-md border border-transparent hover:border-gray-100">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal: INICIO -->
+    <main class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8 h-[calc(100vh-120px)] justify-center perspective-1000">
+        <div class="text-center space-y-4 mb-4">
+            <div class="inline-block relative z-10">
+                <div class="title-backdrop"></div>
+                <h1 class="relative text-4xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg animate-in fade-in zoom-in duration-700">
+                    Contexto Electoral
+                </h1>
+            </div>
+            <div class="block relative z-0 mt-2">
+                 <div class="inline-block relative">
+                     <div class="title-backdrop opacity-60"></div>
+                     <p class="relative text-lg md:text-xl text-gray-100 font-medium max-w-2xl mx-auto drop-shadow-md px-4">
+                        Seleccione un distrito local para explorar su análisis detallado, contexto y proyecciones.
+                    </p>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Carrusel de Distritos -->
+        <div class="relative w-full group/carousel" onmouseenter="stopCarousel()" onmouseleave="startCarousel()">
+            <button onclick="scrollDistricts('left')" class="absolute left-2 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-4 z-20 p-3 md:p-4 rounded-full bg-white hover:bg-gray-50 text-primary shadow-xl transition-all duration-300 hover:scale-110 border border-gray-100">
+                <span class="material-symbols-outlined text-3xl">chevron_left</span>
+            </button>
+            <button onclick="scrollDistricts('right')" class="absolute right-2 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-4 z-20 p-3 md:p-4 rounded-full bg-white hover:bg-gray-50 text-primary shadow-xl transition-all duration-300 hover:scale-110 border border-gray-100">
+                <span class="material-symbols-outlined text-3xl">chevron_right</span>
+            </button>
+
+            <div id="districtsContainer" class="flex gap-8 overflow-x-auto pb-12 pt-8 px-4 snap-x snap-mandatory scrollbar-hide scroll-smooth">
+                <!-- Se llena con JS -->
+            </div>
+            
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-2 text-xs text-white/80 font-bold opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                <span class="material-symbols-outlined text-sm animate-spin">autorenew</span>
+                <span>Pausado al interactuar</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Conexión a JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
