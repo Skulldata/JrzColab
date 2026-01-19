@@ -280,7 +280,14 @@ function renderTable(data) {
             <td class="px-6 py-4 align-middle"><div class="relative inline-block"><select onchange="handleStatusChange(this, '${r.id}')" class="appearance-none cursor-pointer pl-3 pr-8 py-1.5 rounded-full text-xs font-bold border focus:ring-2 transition-all outline-none shadow-sm backdrop-blur-sm ${stCls}"><option value="pending" ${!r.assigned ? 'selected' : ''}>Pendiente</option><option value="assigned" ${r.assigned ? 'selected' : ''}>Asignada</option></select></div></td>
             <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Nombre" value="${r.brigadista || ''}" onchange="updateSheet('${r.id}', 'brigadista', this.value, this)"></td>
             <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Teléfono" value="${r.phone || ''}" onchange="updateSheet('${r.id}', 'phone', this.value, this)"></td>
-            <td class="px-6 py-4 align-middle text-center">${r.mapLink && r.mapLink.length > 5 ? `<a href="${r.mapLink}" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-600 hover:text-white transition-all font-semibold text-xs group/map"><span class="material-symbols-outlined text-[16px] group-hover/map:animate-bounce">map</span> Ver Ubicación</a>` : `<span class="inline-flex items-center justify-center size-8 rounded-full bg-gray-100/50 dark:bg-white/5 text-gray-300 cursor-not-allowed"><span class="material-symbols-outlined text-[18px]">map_off</span></span>`}</td>
+            <td class="px-6 py-4 align-middle text-center">
+                <div class="flex items-center justify-center gap-2">
+                    ${r.mapLink && r.mapLink.length > 5 ? `<a href="${r.mapLink}" target="_blank" class="inline-flex items-center justify-center size-8 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-600 hover:text-white transition-all shadow-sm group/map" title="Ver en Mapa"><span class="material-symbols-outlined text-[18px]">map</span></a>` : `<span class="inline-flex items-center justify-center size-8 rounded-full bg-gray-100/50 dark:bg-white/5 text-gray-300 cursor-not-allowed"><span class="material-symbols-outlined text-[18px]">map_off</span></span>`}
+                    <button onclick="openFicha('${r.id}')" class="inline-flex items-center justify-center size-8 rounded-full bg-red-50 text-red-600 border border-red-200 hover:bg-red-600 hover:text-white transition-all shadow-sm group/pdf" title="Generar Ficha PDF">
+                        <span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+                    </button>
+                </div>
+            </td>
         `;
         tbody.appendChild(tr);
 
@@ -445,6 +452,106 @@ function onEachFeature(feature, layer) {
     } else popupContent += `<p class="text-sm text-gray-500 italic">No hay datos en el Excel.</p>`;
     popupContent += `</div>`;
     layer.bindPopup(popupContent);
+}
+
+// --- FICHA PDF LOGIC ---
+let currentFichaId = null;
+
+function openFicha(id) {
+    currentFichaId = id;
+    const row = globalData.find(r => String(r.id) === String(id));
+    if (!row) return;
+
+    // Poblar Datos Básicos
+    document.getElementById('pdf-nombre').textContent = row.brigadista || "Sin Asignar";
+    document.getElementById('pdf-telefono').textContent = row.phone || "No registrado";
+    document.getElementById('pdf-zona').textContent = row.id;
+    document.getElementById('pdf-distrito').textContent = row.district;
+    document.getElementById('pdf-fecha').textContent = new Date().toLocaleDateString('es-MX', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+    // Poblar Grid de Secciones
+    const grid = document.getElementById('pdf-secciones-grid');
+    grid.innerHTML = '';
+
+    row.zoneSections.forEach(sec => {
+        const cleanSec = String(sec).trim();
+        let mapUrl = null;
+        if (sectionMaps[cleanSec]) {
+            mapUrl = typeof sectionMaps[cleanSec] === 'string' ? sectionMaps[cleanSec] : sectionMaps[cleanSec].map;
+        }
+
+        const secEl = document.createElement('div');
+        secEl.className = "flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-100";
+
+        // Contenido de la celda de sección
+        let htmlContent = `<div class="flex items-center gap-2"><span class="size-2 rounded-full bg-primary"></span><span class="font-bold text-gray-700">Secc. ${cleanSec}</span></div>`;
+
+        if (mapUrl) {
+            // Nota: En PDF impreso el link clickeable funciona si es digital. Si es para imprimir papel, podríamos poner un QR en el futuro.
+            htmlContent += `<a href="${mapUrl}" target="_blank" class="text-[10px] uppercase font-bold text-primary hover:underline flex items-center gap-1">Ver Mapa <span class="material-symbols-outlined text-[10px]">open_in_new</span></a>`;
+        } else {
+            htmlContent += `<span class="text-[10px] text-gray-400 italic">Sin mapa</span>`;
+        }
+
+        secEl.innerHTML = htmlContent;
+        grid.appendChild(secEl);
+    });
+
+    // Mostrar Modal
+    const modal = document.getElementById('ficha-overlay');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeFicha() {
+    const modal = document.getElementById('ficha-overlay');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+function downloadPDF() {
+    const row = globalData.find(r => String(r.id) === String(currentFichaId));
+    if (!row) return;
+
+    // 1. Obtener HTML del contenido
+    const content = document.getElementById('ficha-printable').innerHTML;
+
+    // 2. Abrir ventana de impresión
+    const printWindow = window.open('', '_blank');
+
+    // 3. Escribir documento completo
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Ficha Brigadista - Zona ${row.id}</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;900&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+            <style>
+                body { font-family: 'Public Sans', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+                @page { size: A4; margin: 0; }
+                @media print {
+                    body { padding: 20px; }
+                    .no-print { display: none; }
+                }
+            </style>
+        </head>
+        <body>
+            ${content}
+            <script>
+                // Esperar a que carguen fuentes y estilos
+                window.onload = function() {
+                    setTimeout(() => {
+                        window.print();
+                        window.close();
+                    }, 500);
+                };
+            </script>
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
 }
 
 // INICIALIZACIÓN
