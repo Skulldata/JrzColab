@@ -70,6 +70,9 @@
                     class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Histórico
                     18-24</a>
 
+                <a href="amigos.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Amigos</a>
+
                 <div class="h-8 w-px bg-gray-300 dark:bg-white/10 mx-2"></div>
 
                 <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing"
@@ -91,7 +94,7 @@
 
     <!-- Contenido Principal: INICIO -->
     <main
-        class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8 h-[calc(100vh-120px)] justify-center perspective-1000">
+        class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8 min-h-[calc(100vh-120px)] perspective-1000">
         <div class="text-center space-y-4 mb-4">
             <div class="inline-block relative z-10">
                 <div class="title-backdrop"></div>
@@ -131,6 +134,24 @@
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-2 text-xs text-white/80 font-bold opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                 <span class="material-symbols-outlined text-sm animate-spin">autorenew</span>
                 <span>Pausado al interactuar</span>
+            </div>
+        </div>
+
+        <!-- Dashboard Power BI -->
+        <div
+            class="w-full glass-panel rounded-2xl p-4 md:p-6 border border-white/20 shadow-2xl animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="p-2 rounded-lg bg-yellow-500/20 text-yellow-400">
+                    <span class="material-symbols-outlined">analytics</span>
+                </span>
+                Análisis de Resultados
+            </h2>
+            <div
+                class="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10 shadow-inner bg-black/20">
+                <iframe title="Report Section" class="absolute inset-0 w-full h-full"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiODA1OWZmZTctZGRjYi00ZjU2LWJhMmQtNzNmMjljYTNjY2IyIiwidCI6ImJjYWE4YjViLTcyM2YtNDUwMS05ZTZjLTBlNzBmMThmMDhhYiJ9"
+                    frameborder="0" allowFullScreen="true">
+                </iframe>
             </div>
         </div>
     </main>

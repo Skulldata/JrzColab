@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Metodología - Gestión de Zonas</title>
-    
+
     <!-- Fuentes e Iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
     <!-- Tailwind CSS y Config -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
@@ -16,35 +20,54 @@
     </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-display text-text-main dark:text-white antialiased selection:bg-primary/30 bg-content">
 
     <!-- Navbar -->
     <header class="sticky top-4 z-50 mx-4 md:mx-8 glass-panel rounded-2xl mt-4">
         <div class="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
-             <div class="flex items-center gap-4">
-                <div class="flex items-center justify-center size-10 bg-primary/10 text-primary rounded-xl border border-primary/20 bg-white"><span class="material-symbols-outlined text-2xl">grid_view</span></div>
-                <div class="hidden sm:flex flex-col"><h1 class="text-lg font-bold tracking-tight text-text-main">Despliegue Territorial</h1><span class="text-[10px] font-extrabold text-primary uppercase">Ciudad Juárez</span></div>
+            <div class="flex items-center gap-4">
+                <div
+                    class="flex items-center justify-center size-10 bg-primary/10 text-primary rounded-xl border border-primary/20 bg-white">
+                    <span class="material-symbols-outlined text-2xl">grid_view</span></div>
+                <div class="hidden sm:flex flex-col">
+                    <h1 class="text-lg font-bold tracking-tight text-text-main">Despliegue Territorial</h1><span
+                        class="text-[10px] font-extrabold text-primary uppercase">Ciudad Juárez</span>
+                </div>
             </div>
             <nav class="hidden md:flex items-center gap-3">
-                <a href="index.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Inicio</a>
+                <a href="index.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Inicio</a>
                 <!-- ACTIVO -->
-                <a href="metodologia.html" class="text-sm font-bold text-primary px-5 py-2.5 bg-white rounded-xl border border-primary/20 shadow-md">Metodología</a>
-                <a href="zonas.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Zonas</a>
-                <a href="historico.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Histórico 18-24</a>
+                <a href="metodologia.html"
+                    class="text-sm font-bold text-primary px-5 py-2.5 bg-white rounded-xl border border-primary/20 shadow-md">Metodología</a>
+                <a href="zonas.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Zonas</a>
+                <a href="historico.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl">Histórico
+                    18-24</a>
+                <a href="amigos.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Amigos</a>
                 <div class="h-8 w-px bg-gray-300 mx-2"></div>
-                <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing" target="_blank" class="flex items-center gap-2 text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl transition-all shadow-sm"><span class="material-symbols-outlined text-[20px]">map</span> Mapa General</a>
+                <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing"
+                    target="_blank"
+                    class="flex items-center gap-2 text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl transition-all shadow-sm"><span
+                        class="material-symbols-outlined text-[20px]">map</span> Mapa General</a>
             </nav>
-            <div class="flex items-center gap-3"><button class="p-2 text-text-sub bg-white/50 hover:bg-white rounded-full"><span class="material-symbols-outlined">notifications</span></button></div>
+            <div class="flex items-center gap-3"><button
+                    class="p-2 text-text-sub bg-white/50 hover:bg-white rounded-full"><span
+                        class="material-symbols-outlined">notifications</span></button></div>
         </div>
     </header>
 
     <main class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8">
-        
+
         <section class="mb-4">
             <h1 class="text-4xl font-black text-primary mb-6 drop-shadow-sm">Metodología Geoestadística Electoral</h1>
             <div class="glass-panel p-6 rounded-2xl shadow-lg border border-white/60">
                 <div class="text-text-main dark:text-gray-200 mb-4">
-                    <pre class="preserve-whitespace font-sans text-sm md:text-base leading-relaxed text-text-main dark:text-gray-200">
+                    <pre
+                        class="preserve-whitespace font-sans text-sm md:text-base leading-relaxed text-text-main dark:text-gray-200">
                      La metodología empleada para el análisis geoestadístico electoral es producto de explorar las distintas metodologías existentes
                      y formar una propia que se ajuste a la realidad electoral del estado de Chihuahua, en sus diferentes elecciones.
 <b>
@@ -66,20 +89,63 @@
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-white/10">
                     <thead class="bg-primary/10 backdrop-blur-sm">
                         <tr>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Indicador</th>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Qué mide</th>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Ideal para</th>
+                            <th
+                                class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                Indicador</th>
+                            <th
+                                class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                Qué mide</th>
+                            <th
+                                class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                Ideal para</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 dark:divide-white/10 bg-white/50 dark:bg-slate-800/50">
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">HHI</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Identificar bastiones o hegemonías</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Nef (Laakso-Taagepera)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Número de partidos efectivos</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Ver pluralismo real</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Competitividad (C)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Qué tan cerrada fue la elección</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Mapas de riesgo electoral</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Volatilidad (Pedersen)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Cambios entre elecciones</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Fidelidad o movilidad del voto</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Fragmentación (Rae)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Dispersión del voto</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Análisis complementario al HHI</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Dominancia (D)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Margen del ganador</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Clasificar secciones seguras o competidas</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Polarización (Dalton)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Distancia ideológica</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Análisis de sistemas partidistas</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Gini territorial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración espacial del voto</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Identificar enclaves partidistas</td></tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">HHI</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Identificar bastiones o hegemonías
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Nef (Laakso-Taagepera)
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Número de partidos efectivos</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Ver pluralismo real</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Competitividad (C)</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Qué tan cerrada fue la elección</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Mapas de riesgo electoral</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Volatilidad (Pedersen)
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Cambios entre elecciones</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Fidelidad o movilidad del voto</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Fragmentación (Rae)</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Dispersión del voto</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Análisis complementario al HHI</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Dominancia (D)</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Margen del ganador</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Clasificar secciones seguras o
+                                competidas</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Polarización (Dalton)
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Distancia ideológica</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Análisis de sistemas partidistas</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-primary-dark">Gini territorial</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración espacial del voto</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Identificar enclaves partidistas</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -91,25 +157,92 @@
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-white/10">
                     <thead class="bg-secondary/10 backdrop-blur-sm">
                         <tr>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">Índice</th>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">Origen</th>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">Qué mide</th>
-                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">Aplicación electoral</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">
+                                Índice</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">
+                                Origen</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">
+                                Qué mide</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-secondary uppercase tracking-wider">
+                                Aplicación electoral</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 dark:divide-white/10 bg-white/50 dark:bg-slate-800/50">
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Shannon</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Ecología</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad del voto</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Fragmentación</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Theil</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Economía</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Desigualdad del voto</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración territorial</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Gini</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Economía</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Desigualdad</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Desbalance de voto o cobertura</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Moran</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Geografía</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Autocorrelación espacial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Bastiones o clusters</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Entropía territorial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Geografía</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Dispersión espacial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Cobertura partidista</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Simpson</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Ecología</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Dominancia</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Predominio partidista</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Redundancia (R)</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Sistemas</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Orden electoral</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Disciplina del voto</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Entropía normalizada</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Física</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad comparativa</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Comparar territorios distintos</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Rényi</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Matemática</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad ajustable</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Sensibilidad según peso</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Complejidad territorial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Morfología</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Fragmentación espacial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Compactación de bastiones</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Correlación socioeconómica</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Estadística</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Alineación social</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Perfil socioelectoral</td></tr>
-                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors"><td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Polarización territorial</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Híbrido</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración + localización</td><td class="px-6 py-4 text-text-sub dark:text-gray-300">Intensidad territorial</td></tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Shannon</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Ecología</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad del voto</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Fragmentación</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Theil</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Economía</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Desigualdad del voto</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración territorial</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Gini</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Economía</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Desigualdad</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Desbalance de voto o cobertura</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Moran</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Geografía</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Autocorrelación espacial</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Bastiones o clusters</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Entropía territorial</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Geografía</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Dispersión espacial</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Cobertura partidista</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Simpson</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Ecología</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Dominancia</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Predominio partidista</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Redundancia (R)</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Sistemas</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Orden electoral</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Disciplina del voto</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Entropía normalizada</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Física</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad comparativa</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Comparar territorios distintos</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Rényi</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Matemática</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Diversidad ajustable</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Sensibilidad según peso</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Complejidad territorial
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Morfología</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Fragmentación espacial</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Compactación de bastiones</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Correlación socioeconómica
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Estadística</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Alineación social</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Perfil socioelectoral</td>
+                        </tr>
+                        <tr class="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-secondary">Polarización territorial
+                            </td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Híbrido</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Concentración + localización</td>
+                            <td class="px-6 py-4 text-text-sub dark:text-gray-300">Intensidad territorial</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -117,22 +250,25 @@
 
         <section class="mb-4">
             <h2 class="text-3xl font-bold text-primary mb-6 drop-shadow-sm">Fórmulas Clave</h2>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- HHI Card -->
-                <div class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
+                <div
+                    class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
                     <div class="bg-primary p-4 text-white">
                         <h3 class="text-xl font-bold">Herfindahl–Hirschman Index (HHI)</h3>
                     </div>
                     <div class="p-6">
                         <h4 class="font-semibold text-primary-dark mb-2">¿Qué es?</h4>
-                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Índice de concentración: mide qué tan "concentrada" está una distribución de participaciones entre competidores.</p>
-                        
+                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Índice de concentración: mide qué tan
+                            "concentrada" está una distribución de participaciones entre competidores.</p>
+
                         <h4 class="font-semibold text-primary-dark mb-2">Fórmula</h4>
-                        <div class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200">
+                        <div
+                            class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200">
                             <code>HHI = ∑s_i²</code>
                         </div>
-                        
+
                         <h4 class="font-semibold text-primary-dark mb-2">Interpretación</h4>
                         <div class="space-y-2 text-sm text-text-sub dark:text-gray-300">
                             <div class="flex items-center">
@@ -150,21 +286,24 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- NEP Card -->
-                <div class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
+                <div
+                    class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
                     <div class="bg-secondary p-4 text-white">
                         <h3 class="text-xl font-bold">Número Efectivo de Partidos (NEP)</h3>
                     </div>
                     <div class="p-6">
                         <h4 class="font-semibold text-secondary mb-2">¿Qué mide?</h4>
-                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Cuántos partidos realmente relevantes compiten, considerando su peso electoral.</p>
-                        
+                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Cuántos partidos realmente relevantes
+                            compiten, considerando su peso electoral.</p>
+
                         <h4 class="font-semibold text-secondary mb-2">Fórmula</h4>
-                        <div class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200">
+                        <div
+                            class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200">
                             <code>NEP = 1/(∑v_i²)</code>
                         </div>
-                        
+
                         <h4 class="font-semibold text-secondary mb-2">Interpretación</h4>
                         <div class="space-y-2 text-sm text-text-sub dark:text-gray-300">
                             <div class="flex items-center">
@@ -182,21 +321,24 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Moran Card -->
-                <div class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
+                <div
+                    class="glass-panel rounded-2xl overflow-hidden shadow-lg border border-white/60 hover:scale-[1.02] transition-transform duration-300">
                     <div class="bg-primary p-4 text-white">
                         <h3 class="text-xl font-bold">Índice de Moran (I)</h3>
                     </div>
                     <div class="p-6">
                         <h4 class="font-semibold text-primary-dark mb-2">¿Qué mide?</h4>
-                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Detecta si el voto de un partido se agrupa geográficamente (clusters/bastiones) o si está disperso.</p>
-                        
+                        <p class="text-text-sub dark:text-gray-300 mb-4 text-sm">Detecta si el voto de un partido se
+                            agrupa geográficamente (clusters/bastiones) o si está disperso.</p>
+
                         <h4 class="font-semibold text-primary-dark mb-2">Fórmula</h4>
-                        <div class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200 overflow-x-auto">
+                        <div
+                            class="bg-gray-100 dark:bg-white/20 p-3 rounded-lg mb-4 text-center border border-gray-200 overflow-x-auto">
                             <code>I = n/W (∑∑w_ij(x_i-x̄)(x_j-x̄))/(∑(x_i-x̄)²)</code>
                         </div>
-                        
+
                         <h4 class="font-semibold text-primary-dark mb-2">Interpretación</h4>
                         <div class="space-y-2 text-sm text-text-sub dark:text-gray-300">
                             <div class="flex items-center">
@@ -221,7 +363,8 @@
             <h1 class="text-4xl font-bold text-primary mb-6 drop-shadow-sm">Clasificación por Umbrales para PAN</h1>
             <div class="glass-panel rounded-2xl p-6 mb-8 border border-white/60 shadow-lg">
                 <p class="text-text-main dark:text-gray-300 text-lg">
-                    Sistema de clasificación desarrollado para evaluar el desempeño del PAN en diferentes niveles territoriales (casilla, sección, distrito, municipio, estado) según su resultado electoral.
+                    Sistema de clasificación desarrollado para evaluar el desempeño del PAN en diferentes niveles
+                    territoriales (casilla, sección, distrito, municipio, estado) según su resultado electoral.
                 </p>
             </div>
 
@@ -239,43 +382,53 @@
                             <table class="min-w-full">
                                 <thead class="bg-blue-50 dark:bg-blue-900/30">
                                     <tr>
-                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">Prioridad</th>
-                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">Condición lógica</th>
-                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">Escenario</th>
+                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">
+                                            Prioridad</th>
+                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">
+                                            Condición lógica</th>
+                                        <th class="px-4 py-2 text-left text-blue-800 dark:text-blue-200 font-bold">
+                                            Escenario</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-blue-100/50 dark:divide-white/10">
                                     <tr class="hover:bg-blue-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">1</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">sPAN > 0.70</td>
-                                        <td class="px-4 py-3 font-semibold text-blue-600 dark:text-blue-300">Aprobación Óptima</td>
+                                        <td class="px-4 py-3 font-semibold text-blue-600 dark:text-blue-300">Aprobación
+                                            Óptima</td>
                                     </tr>
                                     <tr class="hover:bg-blue-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">2</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">0.50 < sPAN ≤ 0.70</td>
-                                        <td class="px-4 py-3 font-semibold text-blue-500 dark:text-blue-300">Resultado Favorable</td>
+                                        <td class="px-4 py-3 font-semibold text-blue-500 dark:text-blue-300">Resultado
+                                            Favorable</td>
                                     </tr>
                                     <tr class="hover:bg-blue-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">3</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">s(2) > 0.35</td>
-                                        <td class="px-4 py-3 font-semibold text-yellow-600 dark:text-yellow-400">Oposición >35%</td>
+                                        <td class="px-4 py-3 font-semibold text-yellow-600 dark:text-yellow-400">
+                                            Oposición >35%</td>
                                     </tr>
                                     <tr class="hover:bg-blue-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">4</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">sResto > 0.25</td>
-                                        <td class="px-4 py-3 font-semibold text-purple-600 dark:text-purple-300">Opinión Plural</td>
+                                        <td class="px-4 py-3 font-semibold text-purple-600 dark:text-purple-300">Opinión
+                                            Plural</td>
                                     </tr>
                                     <tr class="hover:bg-blue-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">5</td>
-                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">Ninguna de las anteriores</td>
-                                        <td class="px-4 py-3 font-semibold text-gray-600 dark:text-gray-400">Resultado ordinario</td>
+                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">Ninguna de las anteriores
+                                        </td>
+                                        <td class="px-4 py-3 font-semibold text-gray-600 dark:text-gray-400">Resultado
+                                            ordinario</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-4 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
                             <span class="material-symbols-outlined text-sm">info</span>
-                            <p><span class="font-semibold">s</span> = resultado de la casilla, sección, distrito local, etc.</p>
+                            <p><span class="font-semibold">s</span> = resultado de la casilla, sección, distrito local,
+                                etc.</p>
                         </div>
                     </div>
                 </div>
@@ -293,48 +446,60 @@
                             <table class="min-w-full">
                                 <thead class="bg-violet-50 dark:bg-violet-900/30">
                                     <tr>
-                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">Prioridad</th>
-                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">Condición lógica</th>
-                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">Escenario</th>
+                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">
+                                            Prioridad</th>
+                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">
+                                            Condición lógica</th>
+                                        <th class="px-4 py-2 text-left text-violet-800 dark:text-violet-200 font-bold">
+                                            Escenario</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-violet-100/50 dark:divide-white/10">
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">1</td>
-                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">s(1) > 0.70 o sPAN < 0.20</td>
-                                        <td class="px-4 py-3 font-semibold text-red-600 dark:text-red-400">Desaprobación PAN</td>
+                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">s(1) > 0.70 o sPAN <
+                                                0.20</td>
+                                        <td class="px-4 py-3 font-semibold text-red-600 dark:text-red-400">Desaprobación
+                                            PAN</td>
                                     </tr>
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">2</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">PAN es tercer lugar</td>
-                                        <td class="px-4 py-3 font-semibold text-orange-600 dark:text-orange-400">PAN 3er lugar</td>
+                                        <td class="px-4 py-3 font-semibold text-orange-600 dark:text-orange-400">PAN 3er
+                                            lugar</td>
                                     </tr>
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">3</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">sPAN > 0.35</td>
-                                        <td class="px-4 py-3 font-semibold text-blue-500 dark:text-blue-300">PAN >35%</td>
+                                        <td class="px-4 py-3 font-semibold text-blue-500 dark:text-blue-300">PAN >35%
+                                        </td>
                                     </tr>
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">4</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">sResto > 0.25</td>
-                                        <td class="px-4 py-3 font-semibold text-purple-600 dark:text-purple-300">Opinión Plural Perdido</td>
+                                        <td class="px-4 py-3 font-semibold text-purple-600 dark:text-purple-300">Opinión
+                                            Plural Perdido</td>
                                     </tr>
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">5</td>
                                         <td class="px-4 py-3 text-text-sub dark:text-gray-300">s(1) > 0.50</td>
-                                        <td class="px-4 py-3 font-semibold text-yellow-600 dark:text-yellow-400">Oposición Fuerte</td>
+                                        <td class="px-4 py-3 font-semibold text-yellow-600 dark:text-yellow-400">
+                                            Oposición Fuerte</td>
                                     </tr>
                                     <tr class="hover:bg-violet-50 transition-colors">
                                         <td class="px-4 py-3 font-medium text-text-sub dark:text-gray-300">6</td>
-                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">Ninguna de las anteriores</td>
-                                        <td class="px-4 py-3 font-semibold text-gray-600 dark:text-gray-400">Resultado ordinario Perdido</td>
+                                        <td class="px-4 py-3 text-text-sub dark:text-gray-300">Ninguna de las anteriores
+                                        </td>
+                                        <td class="px-4 py-3 font-semibold text-gray-600 dark:text-gray-400">Resultado
+                                            ordinario Perdido</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-4 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
                             <span class="material-symbols-outlined text-sm">info</span>
-                            <p><span class="font-semibold">s</span> = resultado de la casilla, sección, distrito local, etc.</p>
+                            <p><span class="font-semibold">s</span> = resultado de la casilla, sección, distrito local,
+                                etc.</p>
                         </div>
                     </div>
                 </div>
@@ -342,55 +507,75 @@
 
             <div class="mt-12 glass-panel rounded-2xl p-8 border border-white/60 shadow-xl">
                 <h2 class="text-2xl font-bold text-primary mb-6 drop-shadow-sm">Interpretación de Escenarios</h2>
-                
+
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-600 bg-blue-50 dark:bg-blue-900/10">
                         <h3 class="font-bold text-blue-600 dark:text-blue-400 mb-2">Aprobación Óptima</h3>
-                        <p class="text-text-sub dark:text-gray-300 text-sm">El PAN tiene un dominio claro con más del 70% de los votos, indicando un bastión sólido.</p>
+                        <p class="text-text-sub dark:text-gray-300 text-sm">El PAN tiene un dominio claro con más del
+                            70% de los votos, indicando un bastión sólido.</p>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-500 bg-blue-50/50 dark:bg-blue-900/5">
+                    <div
+                        class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-500 bg-blue-50/50 dark:bg-blue-900/5">
                         <h3 class="font-bold text-blue-500 dark:text-blue-300 mb-2">Resultado Favorable</h3>
-                        <p class="text-text-sub dark:text-gray-300 text-sm">El PAN gana con entre 50-70% de votos, mostrando buena aceptación pero con margen para mejorar.</p>
+                        <p class="text-text-sub dark:text-gray-300 text-sm">El PAN gana con entre 50-70% de votos,
+                            mostrando buena aceptación pero con margen para mejorar.</p>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl border-l-4 border-l-yellow-600 bg-yellow-50 dark:bg-yellow-900/10">
+                    <div
+                        class="glass-panel p-4 rounded-xl border-l-4 border-l-yellow-600 bg-yellow-50 dark:bg-yellow-900/10">
                         <h3 class="font-bold text-yellow-600 dark:text-yellow-400 mb-2">Oposición >35%</h3>
-                        <p class="text-text-sub dark:text-gray-300 text-sm">Aunque el PAN gana, el segundo lugar tiene más del 35%, indicando competencia fuerte.</p>
+                        <p class="text-text-sub dark:text-gray-300 text-sm">Aunque el PAN gana, el segundo lugar tiene
+                            más del 35%, indicando competencia fuerte.</p>
                     </div>
-                    <div class="glass-panel p-4 rounded-xl border-l-4 border-l-purple-600 bg-purple-50 dark:bg-purple-900/10">
+                    <div
+                        class="glass-panel p-4 rounded-xl border-l-4 border-l-purple-600 bg-purple-50 dark:bg-purple-900/10">
                         <h3 class="font-bold text-purple-600 dark:text-purple-400 mb-2">Opinión Plural</h3>
-                        <p class="text-text-sub dark:text-gray-300 text-sm">El voto está distribuido entre varios partidos (ninguno con más del 25%), mostrando diversidad.</p>
+                        <p class="text-text-sub dark:text-gray-300 text-sm">El voto está distribuido entre varios
+                            partidos (ninguno con más del 25%), mostrando diversidad.</p>
                     </div>
                     <div class="glass-panel p-4 rounded-xl border-l-4 border-l-red-600 bg-red-50 dark:bg-red-900/10">
                         <h3 class="font-bold text-red-600 dark:text-red-400 mb-2">Resultado ordinario</h3>
                         <p class="text-text-sub dark:text-gray-300 text-sm">Ninguna de las anteriores.</p>
                     </div>
                 </div>
-                
+
                 <div class="mt-8 pt-8 border-t border-gray-200 dark:border-white/10">
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-600 bg-blue-50 dark:bg-blue-900/10">
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-600 bg-blue-50 dark:bg-blue-900/10">
                             <h3 class="font-bold text-blue-600 dark:text-blue-400 mb-2">Desaprobación PAN</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">El PAN tiene menos del 20% o el ganador tiene más del 70%, mostrando rechazo al PAN.</p>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">El PAN tiene menos del 20% o el ganador
+                                tiene más del 70%, mostrando rechazo al PAN.</p>
                         </div>
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-500 bg-blue-50/50 dark:bg-blue-900/5">
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-blue-500 bg-blue-50/50 dark:bg-blue-900/5">
                             <h3 class="font-bold text-blue-500 dark:text-blue-300 mb-2">PAN 3er lugar</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">El PAN queda en tercer puesto, indicando debilidad en esa zona.</p>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">El PAN queda en tercer puesto, indicando
+                                debilidad en esa zona.</p>
                         </div>
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-yellow-600 bg-yellow-50 dark:bg-yellow-900/10">
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-yellow-600 bg-yellow-50 dark:bg-yellow-900/10">
                             <h3 class="font-bold text-yellow-600 dark:text-yellow-400 mb-2">PAN >35%</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">Tener mas del 35% aunque perdido podria ser un resultado positivo.</p>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">Tener mas del 35% aunque perdido podria
+                                ser un resultado positivo.</p>
                         </div>
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-purple-600 bg-purple-50 dark:bg-purple-900/10">
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-purple-600 bg-purple-50 dark:bg-purple-900/10">
                             <h3 class="font-bold text-purple-600 dark:text-purple-400 mb-2">Opinión Plural Perdido</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">Esta distribuido el resultado entre varios partidos pero el pan no es la fuerza principal.</p>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">Esta distribuido el resultado entre
+                                varios partidos pero el pan no es la fuerza principal.</p>
                         </div>
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-red-600 bg-red-50 dark:bg-red-900/10">
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-red-600 bg-red-50 dark:bg-red-900/10">
                             <h3 class="font-bold text-red-600 dark:text-red-400 mb-2">Oposición Fuerte</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">Escenario altamente dominado por la Oposición.</p>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">Escenario altamente dominado por la
+                                Oposición.</p>
                         </div>
-                        <div class="glass-panel p-4 rounded-xl border-l-4 border-l-orange-600 bg-orange-50 dark:bg-orange-900/10">
-                            <h3 class="font-bold text-orange-600 dark:text-orange-400 mb-2">Resultado ordinario Perdido</h3>
-                            <p class="text-text-sub dark:text-gray-300 text-sm">Espacios con oportunidad y sin difinicion de la Oposición.</p>
+                        <div
+                            class="glass-panel p-4 rounded-xl border-l-4 border-l-orange-600 bg-orange-50 dark:bg-orange-900/10">
+                            <h3 class="font-bold text-orange-600 dark:text-orange-400 mb-2">Resultado ordinario Perdido
+                            </h3>
+                            <p class="text-text-sub dark:text-gray-300 text-sm">Espacios con oportunidad y sin
+                                difinicion de la Oposición.</p>
                         </div>
                     </div>
                 </div>
@@ -403,27 +588,41 @@
                 <!-- Título corregido: Sin fondo difuminado, usando color primario -->
                 <h2 class="text-3xl font-bold text-primary drop-shadow-sm">Densidad de Votación</h2>
             </div>
-            
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
+
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
                 <div class="w-full text-left mb-6">
-                    <h3 class="text-xl font-bold text-text-main dark:text-white mb-2">Curva Normal de Densidad electora Estado Vs Juárez</h3>
+                    <h3 class="text-xl font-bold text-text-main dark:text-white mb-2">Curva Normal de Densidad electora
+                        Estado Vs Juárez</h3>
                     <p class="text-text-sub dark:text-gray-300 text-sm md:text-base leading-relaxed">
-                        Todas las casillas tienen distintos números de listado nominal y también distintos votos totales, no es lo mismo una sección poco densa territorialmente que junta 150 votos, que una sección muy densa que junta más de 350 votos. Esto afecta las secciones que se toman para recorrer eficientemente el territorio y definir prioridades.
+                        Todas las casillas tienen distintos números de listado nominal y también distintos votos
+                        totales, no es lo mismo una sección poco densa territorialmente que junta 150 votos, que una
+                        sección muy densa que junta más de 350 votos. Esto afecta las secciones que se toman para
+                        recorrer eficientemente el territorio y definir prioridades.
                     </p>
                 </div>
-                
+
                 <!-- Image ONLY as requested -->
-                 <img src="https://i.imgur.com/cftJ4sW.png" onerror="this.src='https://i.imgur.com/cftJ4sW.jpg'" alt="Gráfica de Densidad" class="rounded-xl shadow-md max-w-full h-auto object-contain mb-8">
+                <img src="https://i.imgur.com/cftJ4sW.png" onerror="this.src='https://i.imgur.com/cftJ4sW.jpg'"
+                    alt="Gráfica de Densidad" class="rounded-xl shadow-md max-w-full h-auto object-contain mb-8">
 
                 <!-- Table -->
                 <div class="overflow-x-auto w-full rounded-xl border border-gray-200 dark:border-gray-700">
                     <table class="min-w-full divide-y divide-gray-200 dark:divide-white/10">
                         <thead class="bg-primary/10 backdrop-blur-sm">
                             <tr>
-                                <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Densidad</th>
-                                <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Descripción</th>
-                                <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Frecuencia Edo</th>
-                                <th class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">Frecuencia Jrz</th>
+                                <th
+                                    class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                    Densidad</th>
+                                <th
+                                    class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                    Descripción</th>
+                                <th
+                                    class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                    Frecuencia Edo</th>
+                                <th
+                                    class="px-6 py-4 text-left text-xs font-bold text-primary-dark uppercase tracking-wider">
+                                    Frecuencia Jrz</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200 dark:divide-white/10 bg-white/50 dark:bg-slate-800/50">
@@ -466,26 +665,32 @@
         <!-- Section: Orden de Prioridades (Restored for context) -->
         <section class="mb-4">
             <h2 class="text-3xl font-bold text-primary mb-6 drop-shadow-sm">Orden de prioridades electorales:</h2>
-            
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
+
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
                 <div class="w-full text-left mb-6">
                     <p class="text-text-sub dark:text-gray-300 text-sm md:text-base leading-relaxed">
-                        De los escenarios identificados se ordenan en bloques segun su densidad electoral y su resultado.
+                        De los escenarios identificados se ordenan en bloques segun su densidad electoral y su
+                        resultado.
                     </p>
                 </div>
-                 <img src="https://i.imgur.com/Yjg2d0j.png" onerror="this.src='https://i.imgur.com/Yjg2d0j.jpg'" alt="Orden de Prioridades" class="rounded-xl shadow-md max-w-full h-auto object-contain">
+                <img src="https://i.imgur.com/Yjg2d0j.png" onerror="this.src='https://i.imgur.com/Yjg2d0j.jpg'"
+                    alt="Orden de Prioridades" class="rounded-xl shadow-md max-w-full h-auto object-contain">
             </div>
         </section>
 
         <!-- NEW SECTION: Simplificación del Concepto -->
         <section class="mb-4">
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center">
                 <div class="w-full text-left mb-6">
                     <p class="text-text-sub dark:text-gray-300 text-sm md:text-base leading-relaxed">
-                        Y luego simplificamos el concepto, con el fin de identificar rapidamente la poblacion objetivo a intervenir.
+                        Y luego simplificamos el concepto, con el fin de identificar rapidamente la poblacion objetivo a
+                        intervenir.
                     </p>
                 </div>
-                 <img src="https://i.imgur.com/uE5HjYd.png" onerror="this.src='https://i.imgur.com/uE5HjYd.jpg'" alt="Simplificación del Concepto" class="rounded-xl shadow-md max-w-full h-auto object-contain">
+                <img src="https://i.imgur.com/uE5HjYd.png" onerror="this.src='https://i.imgur.com/uE5HjYd.jpg'"
+                    alt="Simplificación del Concepto" class="rounded-xl shadow-md max-w-full h-auto object-contain">
             </div>
         </section>
     </main>
@@ -496,41 +701,106 @@
         <div class="flex flex-col gap-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div class="glass-panel p-6 rounded-2xl flex-1 border-l-4 border-l-primary shadow-xl">
-                    <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-2 text-text-main dark:text-white">Gestión de Zonas y Brigadistas</h2>
-                    <p class="text-text-sub dark:text-slate-300 max-w-2xl text-sm font-medium">Administre la cobertura territorial y asigne personal operativo.</p>
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-2 text-text-main dark:text-white">
+                        Gestión de Zonas y Brigadistas</h2>
+                    <p class="text-text-sub dark:text-slate-300 max-w-2xl text-sm font-medium">Administre la cobertura
+                        territorial y asigne personal operativo.</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-2 h-full">
-                    <button onclick="openDynamicMap()" class="flex-1 flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-4 rounded-2xl font-semibold shadow-lg shadow-purple-500/30 hover:scale-[1.02] transition-all border-t border-white/20 active:scale-95 group">
-                         <span class="material-symbols-outlined text-[24px]">map</span> <span class="hidden sm:inline">Ver Mapa Cobertura</span>
+                    <button onclick="openDynamicMap()"
+                        class="flex-1 flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-4 rounded-2xl font-semibold shadow-lg shadow-purple-500/30 hover:scale-[1.02] transition-all border-t border-white/20 active:scale-95 group">
+                        <span class="material-symbols-outlined text-[24px]">map</span> <span
+                            class="hidden sm:inline">Ver Mapa Cobertura</span>
                     </button>
-                    <button onclick="fetchSheetData()" class="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-4 rounded-2xl font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-[1.02] transition-all border-t border-white/20 active:scale-95 group">
-                        <span class="material-symbols-outlined text-[24px] group-hover:rotate-180 transition-transform duration-500">sync</span> <span class="hidden sm:inline">Recargar Datos</span>
+                    <button onclick="fetchSheetData()"
+                        class="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-4 rounded-2xl font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-[1.02] transition-all border-t border-white/20 active:scale-95 group">
+                        <span
+                            class="material-symbols-outlined text-[24px] group-hover:rotate-180 transition-transform duration-500">sync</span>
+                        <span class="hidden sm:inline">Recargar Datos</span>
                     </button>
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-gray-100"><span class="material-symbols-outlined text-6xl text-text-main absolute top-0 right-0 p-4 opacity-10">map</span><div class="flex items-center gap-2 text-text-sub text-sm font-bold uppercase mb-2">Total Zonas</div><p class="text-4xl font-black text-text-main" id="stat-total-zonas">0</p></div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-green-200"><div class="absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 blur-3xl rounded-full"></div><div class="flex items-center gap-2 text-green-700 text-sm font-bold uppercase mb-2">Asignadas</div><p class="text-4xl font-black text-text-main" id="stat-asignadas">0</p></div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-orange-200"><div class="absolute -right-4 -top-4 w-24 h-24 bg-orange-500/10 blur-3xl rounded-full"></div><div class="flex items-center gap-2 text-orange-700 text-sm font-bold uppercase mb-2">Pendientes</div><p class="text-4xl font-black text-text-main" id="stat-pendientes">0</p></div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-gray-100"><span
+                        class="material-symbols-outlined text-6xl text-text-main absolute top-0 right-0 p-4 opacity-10">map</span>
+                    <div class="flex items-center gap-2 text-text-sub text-sm font-bold uppercase mb-2">Total Zonas
+                    </div>
+                    <p class="text-4xl font-black text-text-main" id="stat-total-zonas">0</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-green-200">
+                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 blur-3xl rounded-full"></div>
+                    <div class="flex items-center gap-2 text-green-700 text-sm font-bold uppercase mb-2">Asignadas</div>
+                    <p class="text-4xl font-black text-text-main" id="stat-asignadas">0</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group border border-orange-200">
+                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-orange-500/10 blur-3xl rounded-full"></div>
+                    <div class="flex items-center gap-2 text-orange-700 text-sm font-bold uppercase mb-2">Pendientes
+                    </div>
+                    <p class="text-4xl font-black text-text-main" id="stat-pendientes">0</p>
+                </div>
             </div>
         </div>
 
         <div class="glass-panel p-4 rounded-2xl border border-primary/20 shadow-md">
-            <h3 class="text-xs font-bold text-text-sub uppercase tracking-wider mb-3 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">touch_app</span> Guía de Interacción</h3>
+            <h3 class="text-xs font-bold text-text-sub uppercase tracking-wider mb-3 flex items-center gap-2"><span
+                    class="material-symbols-outlined text-primary text-sm">touch_app</span> Guía de Interacción</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div class="flex items-center gap-3 p-2 rounded-lg bg-blue-50/50 border border-blue-100"><div class="flex items-center justify-center size-8 rounded-full bg-blue-50 border border-blue-200 text-blue-600"><span class="material-symbols-outlined text-[18px]">public</span></div><div><p class="font-bold text-xs">Mapa Seccional</p><p class="text-[10px] text-text-sub">Mapa detallado de la sección.</p></div></div>
-                <div class="flex items-center gap-3 p-2 rounded-lg bg-purple-50/50 border border-purple-100"><div class="flex items-center justify-center size-8 rounded-full bg-purple-50 border border-purple-200 text-purple-600"><span class="material-symbols-outlined text-[18px]">analytics</span></div><div><p class="font-bold text-xs">Datos Seccionales</p><p class="text-[10px] text-text-sub">Análisis estadístico.</p></div></div>
-                <div class="flex items-center gap-3 p-2 rounded-lg bg-emerald-50/50 border border-emerald-100"><div class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200"><span class="material-symbols-outlined text-[14px]">map</span><span class="text-[10px] font-bold">Ver</span></div><div><p class="font-bold text-xs">Ubicación General</p><p class="text-[10px] text-text-sub">Ubicación en mapa general.</p></div></div>
+                <div class="flex items-center gap-3 p-2 rounded-lg bg-blue-50/50 border border-blue-100">
+                    <div
+                        class="flex items-center justify-center size-8 rounded-full bg-blue-50 border border-blue-200 text-blue-600">
+                        <span class="material-symbols-outlined text-[18px]">public</span></div>
+                    <div>
+                        <p class="font-bold text-xs">Mapa Seccional</p>
+                        <p class="text-[10px] text-text-sub">Mapa detallado de la sección.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-2 rounded-lg bg-purple-50/50 border border-purple-100">
+                    <div
+                        class="flex items-center justify-center size-8 rounded-full bg-purple-50 border border-purple-200 text-purple-600">
+                        <span class="material-symbols-outlined text-[18px]">analytics</span></div>
+                    <div>
+                        <p class="font-bold text-xs">Datos Seccionales</p>
+                        <p class="text-[10px] text-text-sub">Análisis estadístico.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-2 rounded-lg bg-emerald-50/50 border border-emerald-100">
+                    <div
+                        class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200">
+                        <span class="material-symbols-outlined text-[14px]">map</span><span
+                            class="text-[10px] font-bold">Ver</span></div>
+                    <div>
+                        <p class="font-bold text-xs">Ubicación General</p>
+                        <p class="text-[10px] text-text-sub">Ubicación en mapa general.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="flex flex-col md:flex-row gap-4 items-center justify-between glass-panel p-3 rounded-2xl">
-            <div class="relative w-full md:w-96 group"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span><input id="searchInput" class="w-full pl-10 pr-4 py-2.5 glass-input rounded-xl text-sm font-medium" placeholder="Buscar zona, ID o brigadista..." type="text"/></div>
+            <div class="relative w-full md:w-96 group"><span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span><input
+                    id="searchInput" class="w-full pl-10 pr-4 py-2.5 glass-input rounded-xl text-sm font-medium"
+                    placeholder="Buscar zona, ID o brigadista..." type="text" /></div>
             <div class="flex flex-wrap items-center gap-4 w-full md:w-auto z-20">
-                <div id="loading-indicator" class="hidden flex items-center gap-2 px-4 py-2 text-sm text-primary font-bold bg-primary/10 rounded-lg"><span class="size-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></span> Actualizando...</div>
+                <div id="loading-indicator"
+                    class="hidden flex items-center gap-2 px-4 py-2 text-sm text-primary font-bold bg-primary/10 rounded-lg">
+                    <span class="size-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></span>
+                    Actualizando...</div>
                 <div class="relative min-w-[220px]" id="distritoDropdown">
-                    <button onclick="toggleDistritoDropdown()" class="flex items-center justify-between w-full pl-4 pr-4 py-2.5 glass-input rounded-xl text-sm font-medium hover:bg-white hover:shadow-md transition-all"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-gray-500">filter_alt</span><span id="distritoButtonText" class="truncate">Todos los Distritos</span></div><span class="material-symbols-outlined text-gray-400 text-sm" id="distritoArrow">expand_more</span></button>
-                    <div id="distritoDropdownContent" class="hidden absolute top-full left-0 mt-2 w-full max-h-60 overflow-y-auto bg-white border border-gray-200 rounded-xl z-50 flex-col py-2 shadow-2xl"><div class="px-3 pb-2 border-b border-gray-100 sticky top-0 bg-white z-10 pt-1"><span class="text-xs font-bold text-text-sub uppercase">Seleccionar</span></div><div id="distritosCheckboxContainer" class="flex flex-col pt-1"></div></div>
+                    <button onclick="toggleDistritoDropdown()"
+                        class="flex items-center justify-between w-full pl-4 pr-4 py-2.5 glass-input rounded-xl text-sm font-medium hover:bg-white hover:shadow-md transition-all">
+                        <div class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-gray-500">filter_alt</span><span
+                                id="distritoButtonText" class="truncate">Todos los Distritos</span></div><span
+                            class="material-symbols-outlined text-gray-400 text-sm"
+                            id="distritoArrow">expand_more</span>
+                    </button>
+                    <div id="distritoDropdownContent"
+                        class="hidden absolute top-full left-0 mt-2 w-full max-h-60 overflow-y-auto bg-white border border-gray-200 rounded-xl z-50 flex-col py-2 shadow-2xl">
+                        <div class="px-3 pb-2 border-b border-gray-100 sticky top-0 bg-white z-10 pt-1"><span
+                                class="text-xs font-bold text-text-sub uppercase">Seleccionar</span></div>
+                        <div id="distritosCheckboxContainer" class="flex flex-col pt-1"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -546,71 +816,91 @@
                             <th class="px-6 py-5 text-xs font-bold text-text-sub uppercase w-[140px]">Estado</th>
                             <th class="px-6 py-5 text-xs font-bold text-text-sub uppercase w-[280px]">Brigadista</th>
                             <th class="px-6 py-5 text-xs font-bold text-text-sub uppercase w-[180px]">Teléfono</th>
-                            <th class="px-6 py-5 text-xs font-bold text-text-sub uppercase w-[140px] text-center">Acciones</th>
+                            <th class="px-6 py-5 text-xs font-bold text-text-sub uppercase w-[140px] text-center">
+                                Acciones</th>
                         </tr>
                     </thead>
                     <tbody id="table-body" class="divide-y divide-gray-200"></tbody>
                 </table>
             </div>
-            <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between bg-gray-50/50"><p class="text-sm font-medium text-text-sub">Mostrando <span id="result-count" class="font-bold text-primary">0</span> resultados</p><div class="text-xs font-medium text-text-sub opacity-70 flex items-center gap-1"><span class="material-symbols-outlined text-xs">info</span> Los cambios se guardan automáticamente al salir.</div></div>
+            <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between bg-gray-50/50">
+                <p class="text-sm font-medium text-text-sub">Mostrando <span id="result-count"
+                        class="font-bold text-primary">0</span> resultados</p>
+                <div class="text-xs font-medium text-text-sub opacity-70 flex items-center gap-1"><span
+                        class="material-symbols-outlined text-xs">info</span> Los cambios se guardan automáticamente al
+                    salir.</div>
+            </div>
         </div>
     </main>
 
     <!-- DYNAMIC MAP MODAL (LEAFLET) -->
     <div id="dynamicMapModal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeDynamicMap()"></div>
-        <div class="relative w-full max-w-6xl h-[85vh] glass-panel rounded-2xl flex flex-col shadow-2xl animate-in zoom-in-95 duration-200 bg-white">
+        <div
+            class="relative w-full max-w-6xl h-[85vh] glass-panel rounded-2xl flex flex-col shadow-2xl animate-in zoom-in-95 duration-200 bg-white">
             <div class="flex items-center justify-between p-4 border-b border-gray-200">
                 <div class="flex items-center gap-3">
-                    <h3 class="text-xl font-bold text-text-main flex items-center gap-2"><span class="material-symbols-outlined text-primary">map</span> Mapa de Cobertura</h3>
-                    <div class="flex gap-2 text-xs font-bold"><span class="px-2 py-1 rounded bg-green-100 text-green-700 border border-green-200">● Asignada</span><span class="px-2 py-1 rounded bg-orange-100 text-orange-700 border border-orange-200">● Pendiente</span></div>
+                    <h3 class="text-xl font-bold text-text-main flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary">map</span> Mapa de Cobertura</h3>
+                    <div class="flex gap-2 text-xs font-bold"><span
+                            class="px-2 py-1 rounded bg-green-100 text-green-700 border border-green-200">●
+                            Asignada</span><span
+                            class="px-2 py-1 rounded bg-orange-100 text-orange-700 border border-orange-200">●
+                            Pendiente</span></div>
                 </div>
-                <button onclick="closeDynamicMap()" class="p-2 hover:bg-black/5 rounded-full"><span class="material-symbols-outlined">close</span></button>
+                <button onclick="closeDynamicMap()" class="p-2 hover:bg-black/5 rounded-full"><span
+                        class="material-symbols-outlined">close</span></button>
             </div>
             <div class="flex-1 relative bg-gray-100 rounded-b-2xl overflow-hidden">
                 <div id="leafletMap"></div>
             </div>
         </div>
     </div>
-    
+
     <!-- 3. Archivo de Histórico (`historico.html`) -->
     <main id="historyView" class="hidden flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8">
         <section class="mb-4">
-             <div class="inline-block relative mb-6">
+            <div class="inline-block relative mb-6">
                 <h1 class="text-4xl font-black text-primary drop-shadow-sm">Histórico de Resultados 2018-2024</h1>
             </div>
 
             <!-- 2024 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
                 <div class="w-full text-left mb-4">
-                     <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2024</h2>
+                    <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2024</h2>
                 </div>
-                <img src="https://i.imgur.com/DdoqJIb.png" onerror="this.src='https://i.imgur.com/DdoqJIb.jpg'" alt="Resultados 2024" class="rounded-xl shadow-md max-w-full h-auto object-contain">
+                <img src="https://i.imgur.com/DdoqJIb.png" onerror="this.src='https://i.imgur.com/DdoqJIb.jpg'"
+                    alt="Resultados 2024" class="rounded-xl shadow-md max-w-full h-auto object-contain">
             </div>
 
             <!-- 2021 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
                 <div class="w-full text-left mb-4">
-                     <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2021</h2>
+                    <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2021</h2>
                 </div>
-                <img src="https://i.imgur.com/0kimyQo.png" onerror="this.src='https://i.imgur.com/0kimyQo.jpg'" alt="Resultados 2021" class="rounded-xl shadow-md max-w-full h-auto object-contain">
+                <img src="https://i.imgur.com/0kimyQo.png" onerror="this.src='https://i.imgur.com/0kimyQo.jpg'"
+                    alt="Resultados 2021" class="rounded-xl shadow-md max-w-full h-auto object-contain">
             </div>
 
             <!-- 2018 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8">
                 <div class="w-full text-left mb-4">
-                     <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2018</h2>
+                    <h2 class="text-2xl font-bold text-primary mb-2">Resultados Electorales 2018</h2>
                 </div>
-                <img src="https://i.imgur.com/jL4Aytf.png" onerror="this.src='https://i.imgur.com/jL4Aytf.jpg'" alt="Resultados 2018" class="rounded-xl shadow-md max-w-full h-auto object-contain">
+                <img src="https://i.imgur.com/jL4Aytf.png" onerror="this.src='https://i.imgur.com/jL4Aytf.jpg'"
+                    alt="Resultados 2018" class="rounded-xl shadow-md max-w-full h-auto object-contain">
             </div>
         </section>
     </main>
 
     <script>
         const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxDMkP5NKfdb9xOjVBe20h7vff7KX4OR_8GKEsm42aszgq2ZgnOmXOX68pXSK0SB6Vw/exec';
-        const GEOJSON_URL = 'zonas.geojson'; 
+        const GEOJSON_URL = 'zonas.geojson';
 
-        let globalData = [], uniqueDistricts = new Set(), selectedDistricts = new Set(), sectionMaps = {}; 
+        let globalData = [], uniqueDistricts = new Set(), selectedDistricts = new Set(), sectionMaps = {};
         let mapInstance = null, geoJsonLayer = null;
 
         const districtsData = [
@@ -663,7 +953,7 @@
         async function initLeafletMap() {
             mapInstance = L.map('leafletMap').setView([31.73, -106.48], 11);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(mapInstance);
-            
+
             try {
                 console.log("Cargando GeoJSON desde: " + GEOJSON_URL);
                 const response = await fetch(GEOJSON_URL);
@@ -678,14 +968,14 @@
         function styleFeature(feature) {
             // CORRECCIÓN: Buscamos específicamente 'ID_Zona'
             const props = feature.properties;
-            const geoId = props.ID_Zona || props.id || props.Name || ""; 
+            const geoId = props.ID_Zona || props.id || props.Name || "";
             const cleanGeoId = String(geoId).trim();
 
             const zoneData = globalData.find(z => String(z.id).trim() === cleanGeoId);
-            
+
             let color = '#94a3b8';
             let opacity = 0.4;
-            
+
             if (zoneData) {
                 if (zoneData.assigned) { color = '#22c55e'; opacity = 0.6; }
                 else { color = '#f97316'; opacity = 0.6; }
@@ -697,20 +987,20 @@
         function updateMapColors() { if (geoJsonLayer) geoJsonLayer.setStyle(styleFeature); }
 
         function onEachFeature(feature, layer) {
-             const props = feature.properties;
-             const geoId = props.ID_Zona || props.id || props.Name || "Sin ID";
-             const cleanGeoId = String(geoId).trim();
-             const zoneData = globalData.find(z => String(z.id).trim() === cleanGeoId);
-             
-             let popupContent = `<div class="font-sans p-1"><h3 class="font-bold text-lg border-b border-gray-200 pb-1 mb-2">Zona: ${cleanGeoId}</h3>`;
-             
-             if (zoneData) {
-                 const badge = zoneData.assigned ? `<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-xs font-bold">ASIGNADA</span>` : `<span class="px-2 py-0.5 rounded-full bg-orange-100 text-orange-700 text-xs font-bold">PENDIENTE</span>`;
-                 popupContent += `<div class="mb-2">${badge}</div><p class="text-sm"><strong>Brigadista:</strong> ${zoneData.brigadista || 'Sin asignar'}</p><p class="text-sm"><strong>Tel:</strong> ${zoneData.phone || '--'}</p><p class="text-xs text-gray-500 mt-2">Distrito: ${zoneData.district}</p>`;
-             } else popupContent += `<p class="text-sm text-gray-500 italic">No hay datos en el Excel.</p>`;
-             
-             popupContent += `</div>`;
-             layer.bindPopup(popupContent);
+            const props = feature.properties;
+            const geoId = props.ID_Zona || props.id || props.Name || "Sin ID";
+            const cleanGeoId = String(geoId).trim();
+            const zoneData = globalData.find(z => String(z.id).trim() === cleanGeoId);
+
+            let popupContent = `<div class="font-sans p-1"><h3 class="font-bold text-lg border-b border-gray-200 pb-1 mb-2">Zona: ${cleanGeoId}</h3>`;
+
+            if (zoneData) {
+                const badge = zoneData.assigned ? `<span class="px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-xs font-bold">ASIGNADA</span>` : `<span class="px-2 py-0.5 rounded-full bg-orange-100 text-orange-700 text-xs font-bold">PENDIENTE</span>`;
+                popupContent += `<div class="mb-2">${badge}</div><p class="text-sm"><strong>Brigadista:</strong> ${zoneData.brigadista || 'Sin asignar'}</p><p class="text-sm"><strong>Tel:</strong> ${zoneData.phone || '--'}</p><p class="text-xs text-gray-500 mt-2">Distrito: ${zoneData.district}</p>`;
+            } else popupContent += `<p class="text-sm text-gray-500 italic">No hay datos en el Excel.</p>`;
+
+            popupContent += `</div>`;
+            layer.bindPopup(popupContent);
         }
 
         // --- LÓGICA DE DATOS Y TABLA (EXISTENTE) ---
@@ -759,7 +1049,7 @@
                     if (sections.length === 0 && item.zone) sections.push(item.zone);
                     if (sections.length === 0) sections.push("Sin asignación");
                     let dist = item.district ? String(item.district).trim() : "N/A";
-                    if(dist === "") dist = "N/A";
+                    if (dist === "") dist = "N/A";
                     uniqueDistricts.add(dist);
                     return {
                         ...item, zoneSections: sections, order: item.order ? item.order : (index + 1).toString(),
@@ -770,12 +1060,12 @@
                 populateDistricts(Array.from(uniqueDistricts));
                 filterAndRender();
                 updateMapColors(); // Actualizar colores del mapa al cargar datos
-            } catch (error) { console.error("Error fetching data:", error); } 
+            } catch (error) { console.error("Error fetching data:", error); }
             finally { document.getElementById('loading-indicator').classList.add('hidden'); }
         }
 
         async function updateSheet(id, field, value, el) {
-            if(el) el.classList.add('saving-pulse');
+            if (el) el.classList.add('saving-pulse');
             try {
                 await fetch(APPS_SCRIPT_URL, {
                     method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
@@ -783,7 +1073,7 @@
                 });
                 const s = document.getElementById('save-status');
                 s.classList.remove('hidden'); s.classList.add('flex');
-                
+
                 // Actualizar estado local y repintar mapa sin recargar
                 const row = globalData.find(r => r.id === id);
                 if (row) {
@@ -795,9 +1085,9 @@
 
                 setTimeout(() => { s.classList.add('hidden'); s.classList.remove('flex'); }, 3000);
             } catch (error) { console.error("Save Error:", error); alert("Error al guardar."); }
-            finally { if(el) el.classList.remove('saving-pulse'); }
+            finally { if (el) el.classList.remove('saving-pulse'); }
         }
-        
+
         function handleStatusChange(s, id) {
             s.className = s.value === 'assigned' ? "appearance-none cursor-pointer pl-3 pr-8 py-1.5 rounded-full text-xs font-bold border focus:ring-2 transition-all outline-none bg-green-100/80 text-green-700 border-green-200 backdrop-blur-sm shadow-sm" : "appearance-none cursor-pointer pl-3 pr-8 py-1.5 rounded-full text-xs font-bold border focus:ring-2 transition-all outline-none bg-gray-100/80 dark:bg-white/10 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-white/10 backdrop-blur-sm shadow-sm";
             updateSheet(id, 'status', s.value, s);
@@ -810,7 +1100,7 @@
             const info = sectionMaps[sec];
             let mUrl = null, dUrl = null;
             if (typeof info === 'string') mUrl = info; else if (typeof info === 'object' && info !== null) { mUrl = info.map; dUrl = info.data; }
-            
+
             if (mUrl) { mapAnchor.href = mUrl; mapAnchor.classList.remove('opacity-50', 'pointer-events-none', 'grayscale'); mapAnchor.classList.add('hover:scale-110', 'hover:shadow-lg'); }
             else if (rowMap && rowMap.length > 5) { mapAnchor.href = rowMap; mapAnchor.classList.remove('opacity-50', 'pointer-events-none', 'grayscale'); mapAnchor.classList.add('hover:scale-110', 'hover:shadow-lg'); }
             else { mapAnchor.removeAttribute('href'); mapAnchor.classList.add('opacity-50', 'pointer-events-none', 'grayscale'); mapAnchor.classList.remove('hover:scale-110', 'hover:shadow-lg'); }
@@ -835,11 +1125,11 @@
         function populateDistricts(dists) {
             const c = document.getElementById('distritosCheckboxContainer');
             c.innerHTML = '';
-            dists.sort((a,b) => (parseInt(a.replace(/\D/g,''))||0) - (parseInt(b.replace(/\D/g,''))||0));
+            dists.sort((a, b) => (parseInt(a.replace(/\D/g, '')) || 0) - (parseInt(b.replace(/\D/g, '')) || 0));
             dists.forEach(d => {
                 const l = document.createElement('label');
                 l.className = "flex items-center gap-3 px-4 py-2 hover:bg-primary/10 dark:hover:bg-white/10 cursor-pointer transition-colors";
-                l.innerHTML = `<input type="checkbox" value="${d}" class="form-checkbox size-4 text-primary rounded border-gray-300 dark:border-gray-500 bg-white/50 focus:ring-primary cursor-pointer" ${selectedDistricts.has(d)?'checked':''}> <span class="text-sm font-medium text-text-main dark:text-gray-200">${d.startsWith('Distrito')?d:`Distrito ${d}`}</span>`;
+                l.innerHTML = `<input type="checkbox" value="${d}" class="form-checkbox size-4 text-primary rounded border-gray-300 dark:border-gray-500 bg-white/50 focus:ring-primary cursor-pointer" ${selectedDistricts.has(d) ? 'checked' : ''}> <span class="text-sm font-medium text-text-main dark:text-gray-200">${d.startsWith('Distrito') ? d : `Distrito ${d}`}</span>`;
                 l.querySelector('input').addEventListener('change', (e) => {
                     if (e.target.checked) selectedDistricts.add(d); else selectedDistricts.delete(d);
                     updateDistritoButtonLabel(); filterAndRender();
@@ -852,14 +1142,14 @@
         function updateDistritoButtonLabel() {
             const t = document.getElementById('distritoButtonText');
             if (selectedDistricts.size === 0) t.textContent = "Todos los Distritos";
-            else if (selectedDistricts.size === 1) { const d = Array.from(selectedDistricts)[0]; t.textContent = d.startsWith('Distrito')?d:`Distrito ${d}`; }
+            else if (selectedDistricts.size === 1) { const d = Array.from(selectedDistricts)[0]; t.textContent = d.startsWith('Distrito') ? d : `Distrito ${d}`; }
             else t.textContent = `${selectedDistricts.size} Distritos Selecc.`;
         }
 
         function filterAndRender() {
             const term = document.getElementById('searchInput').value.toLowerCase();
             const filtered = globalData.filter(i => {
-                const matches = i.zoneSections.join(" ").toLowerCase().includes(term) || (i.brigadista||"").toLowerCase().includes(term) || (i.id||"").toLowerCase().includes(term);
+                const matches = i.zoneSections.join(" ").toLowerCase().includes(term) || (i.brigadista || "").toLowerCase().includes(term) || (i.id || "").toLowerCase().includes(term);
                 const distMatch = selectedDistricts.size === 0 || selectedDistricts.has(i.district);
                 return matches && distMatch;
             });
@@ -875,7 +1165,7 @@
             data.forEach(r => {
                 const tr = document.createElement('tr');
                 const isPending = !r.assigned;
-                tr.className = `group transition-colors border-b border-gray-100/30 dark:border-white/5 hover:bg-white/40 dark:hover:bg-white/5 ${isPending?'bg-orange-50/20 dark:bg-orange-900/10':''}`;
+                tr.className = `group transition-colors border-b border-gray-100/30 dark:border-white/5 hover:bg-white/40 dark:hover:bg-white/5 ${isPending ? 'bg-orange-50/20 dark:bg-orange-900/10' : ''}`;
                 const inpCls = isPending ? "glass-input w-full px-3 py-2 text-sm rounded-lg transition-all focus:ring-2 focus:ring-primary/50 outline-none shadow-sm" : "w-full px-3 py-2 text-sm rounded-lg transition-all focus:ring-2 focus:ring-primary/50 outline-none backdrop-blur-sm bg-transparent border-transparent hover:bg-white/40 dark:hover:bg-white/10 focus:bg-white/80 dark:focus:bg-slate-800/80 border hover:border-white/30";
                 const stCls = r.assigned ? "bg-green-100/80 text-green-700 border-green-200 focus:ring-green-500" : "bg-gray-100/80 dark:bg-white/10 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-white/10 focus:ring-gray-500";
                 const mapId = `map-link-${r.id}`, dataId = `data-link-${r.id}`;
@@ -884,22 +1174,22 @@
                     <td class="px-6 py-4 align-middle"><span class="text-xs font-extrabold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-md whitespace-nowrap shadow-sm backdrop-blur-sm">${r.id}</span></td>
                     <td class="px-6 py-4 align-middle">
                         <div class="flex items-center gap-2">
-                            <select onchange="updateSectionMapLink(this, '${mapId}', '${r.mapLink}')" class="w-full bg-transparent border-none text-sm font-bold text-text-main dark:text-white p-0 focus:ring-0 cursor-pointer appearance-none truncate pr-4 outline-none">${r.zoneSections.map(s=>`<option value="${s}">${s}</option>`).join('')}</select>
+                            <select onchange="updateSectionMapLink(this, '${mapId}', '${r.mapLink}')" class="w-full bg-transparent border-none text-sm font-bold text-text-main dark:text-white p-0 focus:ring-0 cursor-pointer appearance-none truncate pr-4 outline-none">${r.zoneSections.map(s => `<option value="${s}">${s}</option>`).join('')}</select>
                             <a id="${mapId}" href="#" target="_blank" class="flex items-center justify-center size-8 rounded-full bg-blue-50 border border-blue-200 text-blue-600 shadow-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-200 group/btn" title="Ver mapa"><span class="material-symbols-outlined text-[18px] group-hover/btn:scale-110 transition-transform">public</span></a>
                             <a id="${dataId}" href="#" target="_blank" class="flex items-center justify-center size-8 rounded-full bg-purple-50 border border-purple-200 text-purple-600 shadow-sm hover:bg-purple-600 hover:text-white hover:border-purple-600 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-200 group/btn opacity-50 pointer-events-none grayscale" title="Ver datos electorales"><span class="material-symbols-outlined text-[18px] group-hover/btn:scale-110 transition-transform">analytics</span></a>
                         </div>
-                        <div class="text-[10px] font-semibold text-text-sub/70 mt-0.5 truncate max-w-[200px] flex items-center gap-1"><span class="size-1.5 rounded-full bg-primary/50"></span> Distrito: ${r.district||'N/A'}</div>
+                        <div class="text-[10px] font-semibold text-text-sub/70 mt-0.5 truncate max-w-[200px] flex items-center gap-1"><span class="size-1.5 rounded-full bg-primary/50"></span> Distrito: ${r.district || 'N/A'}</div>
                     </td>
-                    <td class="px-6 py-4 align-middle"><div class="relative inline-block"><select onchange="handleStatusChange(this, '${r.id}')" class="appearance-none cursor-pointer pl-3 pr-8 py-1.5 rounded-full text-xs font-bold border focus:ring-2 transition-all outline-none shadow-sm backdrop-blur-sm ${stCls}"><option value="pending" ${!r.assigned?'selected':''}>Pendiente</option><option value="assigned" ${r.assigned?'selected':''}>Asignada</option></select></div></td>
-                    <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Nombre" value="${r.brigadista||''}" onchange="updateSheet('${r.id}', 'brigadista', this.value, this)"></td>
-                    <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Teléfono" value="${r.phone||''}" onchange="updateSheet('${r.id}', 'phone', this.value, this)"></td>
-                    <td class="px-6 py-4 align-middle text-center">${r.mapLink && r.mapLink.length>5 ? `<a href="${r.mapLink}" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all shadow-sm hover:shadow-emerald-500/30 font-semibold text-xs group/map"><span class="material-symbols-outlined text-[16px] group-hover/map:animate-bounce">map</span> Ver Ubicación</a>` : `<span class="inline-flex items-center justify-center size-8 rounded-full bg-gray-100/50 dark:bg-white/5 text-gray-300 cursor-not-allowed"><span class="material-symbols-outlined text-[18px]">map_off</span></span>`}</td>
+                    <td class="px-6 py-4 align-middle"><div class="relative inline-block"><select onchange="handleStatusChange(this, '${r.id}')" class="appearance-none cursor-pointer pl-3 pr-8 py-1.5 rounded-full text-xs font-bold border focus:ring-2 transition-all outline-none shadow-sm backdrop-blur-sm ${stCls}"><option value="pending" ${!r.assigned ? 'selected' : ''}>Pendiente</option><option value="assigned" ${r.assigned ? 'selected' : ''}>Asignada</option></select></div></td>
+                    <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Nombre" value="${r.brigadista || ''}" onchange="updateSheet('${r.id}', 'brigadista', this.value, this)"></td>
+                    <td class="px-6 py-4 align-middle"><input class="${inpCls}" placeholder="Teléfono" value="${r.phone || ''}" onchange="updateSheet('${r.id}', 'phone', this.value, this)"></td>
+                    <td class="px-6 py-4 align-middle text-center">${r.mapLink && r.mapLink.length > 5 ? `<a href="${r.mapLink}" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all shadow-sm hover:shadow-emerald-500/30 font-semibold text-xs group/map"><span class="material-symbols-outlined text-[16px] group-hover/map:animate-bounce">map</span> Ver Ubicación</a>` : `<span class="inline-flex items-center justify-center size-8 rounded-full bg-gray-100/50 dark:bg-white/5 text-gray-300 cursor-not-allowed"><span class="material-symbols-outlined text-[18px]">map_off</span></span>`}</td>
                 `;
                 tbody.appendChild(tr);
-                const sel = tr.querySelector('select'); if(sel) updateSectionMapLink(sel, mapId, r.mapLink);
+                const sel = tr.querySelector('select'); if (sel) updateSectionMapLink(sel, mapId, r.mapLink);
             });
         }
-        
+
         function updateStats(data) {
             document.getElementById('stat-total-zonas').textContent = data.length;
             const asg = data.filter(d => d.assigned).length;
@@ -910,4 +1200,5 @@
         document.addEventListener('DOMContentLoaded', () => { renderDistrictsCarousel(); fetchSheetData(); startCarousel(); document.getElementById('searchInput').addEventListener('input', filterAndRender); });
     </script>
 </body>
+
 </html>

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Histórico - Gestión de Zonas</title>
-    
+
     <!-- Fuentes e Iconos -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
@@ -19,7 +23,7 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#2563eb", 
+                        "primary": "#2563eb",
                         "primary-dark": "#1d4ed8",
                         "secondary": "#7c3aed",
                         "text-main": "#020617",
@@ -37,40 +41,56 @@
     <!-- Conexión a tus Estilos Personalizados -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-display text-text-main dark:text-white antialiased selection:bg-primary/30 bg-content">
 
     <!-- Navbar -->
     <header class="sticky top-4 z-50 mx-4 md:mx-8 glass-panel rounded-2xl mt-4">
         <div class="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <div class="flex items-center justify-center size-10 bg-primary/10 text-primary rounded-xl border border-primary/20 bg-white">
+                <div
+                    class="flex items-center justify-center size-10 bg-primary/10 text-primary rounded-xl border border-primary/20 bg-white">
                     <span class="material-symbols-outlined text-2xl">grid_view</span>
                 </div>
                 <div class="hidden sm:flex flex-col">
-                    <h1 class="text-lg font-bold tracking-tight text-text-main dark:text-white leading-none">Despliegue Territorial</h1>
-                    <span class="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-tight">Ciudad Juárez</span>
+                    <h1 class="text-lg font-bold tracking-tight text-text-main dark:text-white leading-none">Despliegue
+                        Territorial</h1>
+                    <span
+                        class="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-tight">Ciudad
+                        Juárez</span>
                 </div>
             </div>
-            
+
             <nav class="hidden md:flex items-center gap-3">
-                <a href="index.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Inicio</a>
-                <a href="metodologia.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Metodología</a>
-                <a href="zonas.html" class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Zonas</a>
-                
+                <a href="index.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Inicio</a>
+                <a href="metodologia.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Metodología</a>
+                <a href="zonas.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Zonas</a>
+
                 <!-- BOTÓN ACTIVO: Histórico -->
-                <a href="historico.html" class="text-sm font-bold text-primary px-5 py-2.5 bg-white rounded-xl border border-primary/20 shadow-md transition-all hover:scale-105">Histórico 18-24</a>
-                
+                <a href="historico.html"
+                    class="text-sm font-bold text-primary px-5 py-2.5 bg-white rounded-xl border border-primary/20 shadow-md transition-all hover:scale-105">Histórico
+                    18-24</a>
+
+                <a href="amigos.html"
+                    class="text-sm font-medium text-text-sub px-5 py-2.5 bg-white/80 hover:bg-white rounded-xl border border-transparent hover:border-gray-200 hover:shadow-md transition-all hover:text-primary">Amigos</a>
+
                 <div class="h-8 w-px bg-gray-300 dark:bg-white/10 mx-2"></div>
 
                 <!-- Botón Mapa General (Enlace Externo) -->
-                <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing" target="_blank" class="flex items-center gap-2 text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-emerald-500/30 hover:scale-105">
+                <a href="https://www.google.com/maps/d/edit?mid=1HLbLlf1Gl4OuR6RwUd0zENjCmhoA4II&usp=sharing"
+                    target="_blank"
+                    class="flex items-center gap-2 text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-emerald-500/30 hover:scale-105">
                     <span class="material-symbols-outlined text-[20px]">map</span>
                     Mapa General
                 </a>
             </nav>
-            
+
             <div class="flex items-center gap-3">
-                <button class="p-2 text-text-sub bg-white/50 hover:bg-white rounded-full transition-all shadow-sm hover:shadow-md border border-transparent hover:border-gray-100">
+                <button
+                    class="p-2 text-text-sub bg-white/50 hover:bg-white rounded-full transition-all shadow-sm hover:shadow-md border border-transparent hover:border-gray-100">
                     <span class="material-symbols-outlined">notifications</span>
                 </button>
             </div>
@@ -79,56 +99,54 @@
 
     <!-- Contenido Principal: HISTÓRICO -->
     <main class="flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 flex flex-col gap-8">
-        
+
         <section class="mb-4">
-             <div class="inline-block relative mb-6">
+            <div class="inline-block relative mb-6">
                 <h1 class="text-4xl font-black text-primary drop-shadow-sm">Histórico de Resultados 2018-2024</h1>
             </div>
 
             <!-- Resultados 2024 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
                 <div class="w-full text-left mb-6 pb-2 border-b border-gray-100 dark:border-white/10">
-                     <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-3xl">calendar_month</span> Resultados Electorales 2024
-                     </h2>
-                     <p class="text-sm text-text-sub">Panorama electoral más reciente.</p>
+                    <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">calendar_month</span> Resultados Electorales
+                        2024
+                    </h2>
+                    <p class="text-sm text-text-sub">Panorama electoral más reciente.</p>
                 </div>
                 <!-- Imagen 2024 con protección referrer -->
-                <img src="https://i.imgur.com/DdoqJIb.png" 
-                     referrerpolicy="no-referrer"
-                     onerror="this.onerror=null; this.src='https://i.imgur.com/DdoqJIb.jpg'" 
-                     alt="Resultados 2024" 
-                     class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
+                <img src="https://i.imgur.com/DdoqJIb.png" referrerpolicy="no-referrer"
+                    onerror="this.onerror=null; this.src='https://i.imgur.com/DdoqJIb.jpg'" alt="Resultados 2024"
+                    class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
             </div>
 
             <!-- Resultados 2021 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
                 <div class="w-full text-left mb-6 pb-2 border-b border-gray-100 dark:border-white/10">
-                     <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
+                    <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
                         <span class="material-symbols-outlined text-3xl">history</span> Resultados Electorales 2021
-                     </h2>
+                    </h2>
                 </div>
                 <!-- Imagen 2021 con protección referrer -->
-                <img src="https://i.imgur.com/0kimyQo.png" 
-                     referrerpolicy="no-referrer"
-                     onerror="this.onerror=null; this.src='https://i.imgur.com/0kimyQo.jpg'" 
-                     alt="Resultados 2021" 
-                     class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
+                <img src="https://i.imgur.com/0kimyQo.png" referrerpolicy="no-referrer"
+                    onerror="this.onerror=null; this.src='https://i.imgur.com/0kimyQo.jpg'" alt="Resultados 2021"
+                    class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
             </div>
 
             <!-- Resultados 2018 -->
-            <div class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
+            <div
+                class="glass-panel bg-white/95 dark:bg-slate-900/95 rounded-2xl shadow-lg border border-white/60 p-6 flex flex-col items-center mb-8 hover:border-primary/30 transition-colors">
                 <div class="w-full text-left mb-6 pb-2 border-b border-gray-100 dark:border-white/10">
-                     <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
+                    <h2 class="text-2xl font-bold text-primary mb-1 flex items-center gap-2">
                         <span class="material-symbols-outlined text-3xl">history</span> Resultados Electorales 2018
-                     </h2>
+                    </h2>
                 </div>
                 <!-- Imagen 2018 con protección referrer -->
-                <img src="https://i.imgur.com/jL4Aytf.png" 
-                     referrerpolicy="no-referrer"
-                     onerror="this.onerror=null; this.src='https://i.imgur.com/jL4Aytf.jpg'" 
-                     alt="Resultados 2018" 
-                     class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
+                <img src="https://i.imgur.com/jL4Aytf.png" referrerpolicy="no-referrer"
+                    onerror="this.onerror=null; this.src='https://i.imgur.com/jL4Aytf.jpg'" alt="Resultados 2018"
+                    class="rounded-xl shadow-md w-full h-auto object-contain min-h-[200px] bg-gray-100 dark:bg-gray-800">
             </div>
         </section>
 
@@ -137,4 +155,5 @@
     <!-- Conexión a la Lógica JS -->
     <script src="js/app.js"></script>
 </body>
+
 </html>
